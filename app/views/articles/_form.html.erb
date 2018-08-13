@@ -1,0 +1,28 @@
+ <% if @article.errors.any? %>
+   <ul>
+     <% @article.errors.full_messages.each do |msg| %>
+       <li><%= msg %></li>
+     <% end %>
+  </ul>
+ <% end %>
+
+<%= form_for @article do |variable| %>
+  <p>
+    <%= variable.label :title %>
+    <%= variable.text_field :title %>
+  </p>
+  
+  <p>
+    <%= variable.label :description %>
+    <%= variable.text_area :description %>
+  </p>
+  
+  <p>
+    <%= variable.label :author %>
+    <%= variable.text_field :author %>
+  </p>
+  
+  <p>
+    <%= variable.submit %>
+  </p>
+<% end %>
