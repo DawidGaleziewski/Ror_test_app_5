@@ -1,0 +1,81 @@
+$navbar-default-bg: black;
+
+
+#logo {
+  color: red;
+}
+#logo:hover {
+  color: green;
+}
+
+.center {
+  text-align: center;
+}
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.jumbotron {
+  background-image: asset-url('rails.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.btn-custom {
+  font-size: 1.7em;
+  background-color: black;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #aeaeae;
+  color: #777;
+}
+
+.footer a:hover {
+  color: #2222;
+}
+
+.footer small{
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
